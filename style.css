@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .bg-footer{
+        background: linear-gradient(180deg, #1A1E26 0%, #01100B 100%);
+    }
+}

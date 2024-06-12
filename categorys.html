@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="text-white font-lexend font-[400] text-xs md:text-sm bg-[#05422C] text-center py-[8px] leading-[21px] tracking-[0.25px] flex justify-center gap-x-[2px]"
+      >
+        <p class="opacity-70">
+          LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.
+        </p>
+        <span class="inline-block opacity-100 ml-4">23 : 15 : 00</span>
+      </div>
+      <header class="border-[#F4F4F4] border-b-[1px] px-5">
+        <div class="container mx-auto flex items-center py-4 justify-between">
+          <div class="bars block lg:hidden mr-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7 md:size-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+          </div>
+          <div class="max-w-[119px] md:max-w-[167px]">
+            <img
+              src="./public/images/Logo.png"
+              class="w-full"
+              alt="logo-website"
+            />
+          </div>
+          <form action="" class="hidden lg:block">
+            <div class="flex gap-x-2">
+              <input
+                type="text"
+                class="h-12 outline-none border-[#F4F4F4] border-[1px] pl-[24px] pr-1 py-1 rounded-full max-w-[100%] w-[400px]"
+                placeholder="Search"
+              />
+              <button class="bg-[#17AF26] py-2 px-[15px] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-[18px] text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div class="flex gap-x-5">
+            <div class="border-[#C8C9CB] border-r-[1px] pr-5">
+              <span class="text-sm md:text-base">Your Account</span>
+            </div>
+            <div class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                />
+              </svg>
+              <span
+                class="bg-[#EB2606] rounded-full absolute bottom-0 -right-1 w-4 h-4 flex justify-center text-[10px] items-center text-white"
+                >0</span
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="container mx-auto py-4 hidden lg:block">
+        <ul class="flex justify-center gap-x-9 *:font-lexend *:font-[300]">
+          <li><a href="#">Shop All</a></li>
+          <li>
+            Flower
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-3 inline-block"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li><a href="#">Edibles</a></li>
+          <li>
+            Concentrates
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-3 inline-block"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li><a href="#">Mushrooms</a></li>
+          <li>
+            Promotions/Bundles
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-3 inline-block"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li>
+            Support
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-3 inline-block"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li><a href="#">Rewards</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <form action="" class="block lg:hidden w-fit mx-auto my-5">
+        <div class="flex gap-x-2 min-w-[300px] md:min-w-[500px]">
+          <input
+            type="text"
+            class="h-12 outline-none border-[#F4F4F4] border-[1px] pl-[24px] pr-1 py-1 rounded-full w-full"
+            placeholder="Search"
+          />
+          <button class="bg-[#17AF26] py-2 px-[15px] rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-[18px] text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+      <div class="bg-[#F2F6F4] px-5">
+        <div class="container mx-auto py-5">
+          <div class="flex justify-between">
+            <div
+              class="flex flex-col pr-40 border-r items-center gap-2 md:flex-row"
+            >
+              <div class="p-3 bg-white rounded-full">
+                <img class="w-6" src="./public/images/truck-fast.svg" alt="" />
+              </div>
+              <h4 class="text-xl font-[500]">Reliable Shipping</h4>
+            </div>
+            <div
+              class="flex flex-col pr-40 border-r items-center gap-2 md:flex-row"
+            >
+              <div class="p-3 bg-white rounded-full">
+                <img class="w-6" src="./public/images/safe-home.svg" alt="" />
+              </div>
+              <h4 class="text-xl font-[500]">You’re Safe With Us</h4>
+            </div>
+            <div class="flex flex-col items-center gap-2 md:flex-row">
+              <div class="p-3 bg-white rounded-full">
+                <img class="w-6" src="./public/images/coin.svg" alt="" />
+              </div>
+              <h4 class="text-xl font-[500]">Best Quality & Pricing</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto py-[50px] pb-[1000px] px-5">
+        <div class="flex gap-10">
+          <aside class="side-bar min-w-[300px] w-full max-w-[300px] h-screen">
+            <h2 class="font-[500] font-lg pb-5 border-b border-[#F4F4F4]">
+              Filter
+            </h2>
+            <form class="my-7">
+              <h3 class="font-[300] tracking-[1px] text-[#717378]">
+                PRODUCT CATEGORY
+              </h3>
+              <div class="space-y-3 my-5">
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Sales<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >12</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" checked />
+                  <label for="" class="text-sm font-[300]"
+                    >Cannabis<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >430</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Pre-Rolls<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >40</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >CBD Oil<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >20</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Magic Mushrooms<span
+                      class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >34</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Extracts<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >26</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Edibles<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >32</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Vape Pens<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >12</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Accessories<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >8</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Bath & Body<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >24</span
+                    ></label
+                  >
+                </div>
+                <div>
+                  <input type="radio" />
+                  <label for="" class="text-sm font-[300]"
+                    >Wholesale<span class="text-[#9D9EA2] ml-5 pl-5 border-l"
+                      >24</span
+                    ></label
+                  >
+                </div>
+              </div>
+            </form>
+            <div>
+              <h3 class="font-[300] tracking-[1px] text-[#717378]">
+                FILTER BY PRICE
+              </h3>
+              <form action="" class="my-5">
+                <div class="space-y-5">
+                  <div class="flex justify-between">
+                    <span class="py-1 px-4 rounded-full bg-[#F4F4F4]">0$</span>
+                    <span class="py-1 px-4 rounded-full bg-[#F4F4F4]"
+                      >50.000$</span
+                    >
+                  </div>
+                  <input
+                    class="w-full"
+                    type="range"
+                    name="range-price"
+                    id="range-price"
+                  />
+                </div>
+                <button
+                  class="bg-[#17AF26] my-3 px-5 py-2 text-white rounded-full"
+                >
+                  Apply
+                </button>
+              </form>
+            </div>
+            <div>
+              <h3 class="font-[300] tracking-[1px] text-[#717378]">ORDER BY</h3>
+              <form action="" class="my-5">
+                <div class="space-y-3">
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]">Default</label>
+                  </div>
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]"
+                      >Review Count</label
+                    >
+                  </div>
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]">Popularity</label>
+                  </div>
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]"
+                      >Average Rating</label
+                    >
+                  </div>
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]">Newness</label>
+                  </div>
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]"
+                      >Price: Low to High</label
+                    >
+                  </div>
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]"
+                      >Price: High to Low</label
+                    >
+                  </div>
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]"
+                      >Random Products</label
+                    >
+                  </div>
+                  <div>
+                    <input type="radio" />
+                    <label for="" class="text-sm font-[300]"
+                      >Product Name</label
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div>
+              <h3 class="font-[300] tracking-[1px] text-[#717378]">
+                FILTER BY REVIEWS
+              </h3>
+            </div>
+          </aside>
+          <div class="w-full">
+            <div
+              class="flex items-center justify-between pb-7 border-b border-[#F4F4F4]"
+            >
+              <h2 class="text-2xl">Shop</h2>
+              <div class="py-2 px-5 border rounded-full">
+                Short By Lates
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 inline-block text-[#a7a7a7]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="space-y-5 my-5">
+              <h3 class="text-xl font-[500] text-[#17AF26]">Cannabis</h3>
+              <p class="text-[#717378]">
+                Here at WestCoastSupply’s “ cannabis section, we showcase the
+                best Indica, Hybrid, and Sativa medical cannabis strain
+                selections at the best prices online. You can be assured that
+                all our strains go through a strict screening process to ensure
+                that all your cannabis needs are top-quality. All of our flowers
+                are sourced from reputable growers, based in British Columbia,
+                Canada. We have hige grade selection comes from growers that
+                produce AAAA+ quality cannabis flowers and have many years of
+                experience in the cannabis industry. You are guaranteed to be
+                receiving high-quality flowers at the best prices online with
+                our unbeatable sales!
+              </p>
+            </div>
+            <div class="bg-[#F2F6F4] p-6 rounded-xl">
+              <h3 class="text-2xl font-[500]">Top Selling</h3>
+              <div class="flex flex-row gap-5 overflow-hidden">
+                <div class="max-w-[290px] w-full">
+                  <div
+                    class="w-full flex justify-center py-10 bg-[#F4F4F4] rounded-lg mb-3 relative group/item hover:cursor-pointer"
+                  >
+                    <img
+                      src="./public/images/image 13_prev_ui 1.png"
+                      class="w-[50%] object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="bg-[#05422C]/30 backdrop-blur rounded-full absolute invisible group-hover/item:visible w-max z-50 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                    >
+                      <button class="py-5 px-8 text-white">Out Of Stock</button>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div class="mx-auto w-fit">
+                      <span class="text-sm text-[#9D9EA2]">FLOWER</span>
+                    </div>
+                    <h3 class="text-center text-[18px] font-[400]">
+                      2 Oz Deal Watermelon Zkittles + Purple Gushers
+                    </h3>
+                    <div class="flex gap-x-4 justify-center">
+                      <div class="flex items-center gap-x-2">
+                        <svg
+                          class="inline-block w-5 h-5"
+                          height="13"
+                          viewBox="0 0 12 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.86544 2.25531L7.74544 4.01531C7.86544 4.26031 8.18544 4.49531 8.45544 4.54031L10.0504 4.80531C11.0704 4.97531 11.3104 5.71531 10.5754 6.44531L9.33544 7.68531C9.12544 7.89531 9.01044 8.30031 9.07544 8.59031L9.43044 10.1253C9.71044 11.3403 9.06544 11.8103 7.99044 11.1753L6.49544 10.2903C6.22544 10.1303 5.78044 10.1303 5.50544 10.2903L4.01044 11.1753C2.94044 11.8103 2.29044 11.3353 2.57044 10.1253L2.92544 8.59031C2.99044 8.30031 2.87544 7.89531 2.66544 7.68531L1.42544 6.44531C0.695443 5.71531 0.930443 4.97531 1.95044 4.80531L3.54544 4.54031C3.81044 4.49531 4.13044 4.26031 4.25044 4.01531L5.13044 2.25531C5.61044 1.30031 6.39044 1.30031 6.86544 2.25531Z"
+                            fill="#F2BC1B"
+                            stroke="#F2BC1B"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="border-[#C8C9CB] border-r-[1px] pr-4">
+                          4.6/5</span
+                        >
+                      </div>
+                      <span
+                        >135 <span class="text-[#C8C9CB]">Reviews</span></span
+                      >
+                    </div>
+                    <div
+                      class="bg-[#F2F6F4] text-[#05422C] w-fit mx-auto rounded-lg"
+                    >
+                      <span class="py-[10px] px-[15px] inline-block leading-5"
+                        >Sativa 100%</span
+                      >
+                    </div>
+                    <div class="mx-auto w-fit">
+                      <div class="*:font-[600]">
+                        <span class="text-[#EB2606]">$200.00</span
+                        ><span class="text-[#C8C9CB]"> / gram</span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex gap-x-5 *:py-[5px] *:px-[10px] *:border *:rounded-md justify-center"
+                    >
+                      <div>28g</div>
+                      <div>1/2lb</div>
+                      <div>1/4lb</div>
+                    </div>
+                    <div
+                      class="bg-[#17AF26] w-fit px-6 py-2 rounded-full text-white hover:bg-[#2d8735] transition mx-auto"
+                    >
+                      <button class="test-sm">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="max-w-[290px] w-full">
+                  <div
+                    class="w-full flex justify-center py-10 bg-[#F4F4F4] rounded-lg mb-3 relative group/item hover:cursor-pointer"
+                  >
+                    <img
+                      src="./public/images/image 13_prev_ui 1.png"
+                      class="w-[50%] object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="bg-[#05422C]/30 backdrop-blur rounded-full absolute invisible group-hover/item:visible w-max z-50 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                    >
+                      <button class="py-5 px-8 text-white">Out Of Stock</button>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div class="mx-auto w-fit">
+                      <span class="text-sm text-[#9D9EA2]">FLOWER</span>
+                    </div>
+                    <h3 class="text-center text-[18px] font-[400]">
+                      2 Oz Deal Watermelon Zkittles + Purple Gushers
+                    </h3>
+                    <div class="flex gap-x-4 justify-center">
+                      <div class="flex items-center gap-x-2">
+                        <svg
+                          class="inline-block w-5 h-5"
+                          height="13"
+                          viewBox="0 0 12 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.86544 2.25531L7.74544 4.01531C7.86544 4.26031 8.18544 4.49531 8.45544 4.54031L10.0504 4.80531C11.0704 4.97531 11.3104 5.71531 10.5754 6.44531L9.33544 7.68531C9.12544 7.89531 9.01044 8.30031 9.07544 8.59031L9.43044 10.1253C9.71044 11.3403 9.06544 11.8103 7.99044 11.1753L6.49544 10.2903C6.22544 10.1303 5.78044 10.1303 5.50544 10.2903L4.01044 11.1753C2.94044 11.8103 2.29044 11.3353 2.57044 10.1253L2.92544 8.59031C2.99044 8.30031 2.87544 7.89531 2.66544 7.68531L1.42544 6.44531C0.695443 5.71531 0.930443 4.97531 1.95044 4.80531L3.54544 4.54031C3.81044 4.49531 4.13044 4.26031 4.25044 4.01531L5.13044 2.25531C5.61044 1.30031 6.39044 1.30031 6.86544 2.25531Z"
+                            fill="#F2BC1B"
+                            stroke="#F2BC1B"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="border-[#C8C9CB] border-r-[1px] pr-4">
+                          4.6/5</span
+                        >
+                      </div>
+                      <span
+                        >135 <span class="text-[#C8C9CB]">Reviews</span></span
+                      >
+                    </div>
+                    <div
+                      class="bg-[#F2F6F4] text-[#05422C] w-fit mx-auto rounded-lg"
+                    >
+                      <span class="py-[10px] px-[15px] inline-block leading-5"
+                        >Sativa 100%</span
+                      >
+                    </div>
+                    <div class="mx-auto w-fit">
+                      <div class="*:font-[600]">
+                        <span class="text-[#EB2606]">$200.00</span
+                        ><span class="text-[#C8C9CB]"> / gram</span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex gap-x-5 *:py-[5px] *:px-[10px] *:border *:rounded-md justify-center"
+                    >
+                      <div>28g</div>
+                      <div>1/2lb</div>
+                      <div>1/4lb</div>
+                    </div>
+                    <div
+                      class="bg-[#17AF26] w-fit px-6 py-2 rounded-full text-white hover:bg-[#2d8735] transition mx-auto"
+                    >
+                      <button class="test-sm">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="max-w-[290px] w-full">
+                  <div
+                    class="w-full flex justify-center py-10 bg-[#F4F4F4] rounded-lg mb-3 relative group/item hover:cursor-pointer"
+                  >
+                    <img
+                      src="./public/images/image 13_prev_ui 1.png"
+                      class="w-[50%] object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="bg-[#05422C]/30 backdrop-blur rounded-full absolute invisible group-hover/item:visible w-max z-50 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                    >
+                      <button class="py-5 px-8 text-white">Out Of Stock</button>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div class="mx-auto w-fit">
+                      <span class="text-sm text-[#9D9EA2]">FLOWER</span>
+                    </div>
+                    <h3 class="text-center text-[18px] font-[400]">
+                      2 Oz Deal Watermelon Zkittles + Purple Gushers
+                    </h3>
+                    <div class="flex gap-x-4 justify-center">
+                      <div class="flex items-center gap-x-2">
+                        <svg
+                          class="inline-block w-5 h-5"
+                          height="13"
+                          viewBox="0 0 12 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.86544 2.25531L7.74544 4.01531C7.86544 4.26031 8.18544 4.49531 8.45544 4.54031L10.0504 4.80531C11.0704 4.97531 11.3104 5.71531 10.5754 6.44531L9.33544 7.68531C9.12544 7.89531 9.01044 8.30031 9.07544 8.59031L9.43044 10.1253C9.71044 11.3403 9.06544 11.8103 7.99044 11.1753L6.49544 10.2903C6.22544 10.1303 5.78044 10.1303 5.50544 10.2903L4.01044 11.1753C2.94044 11.8103 2.29044 11.3353 2.57044 10.1253L2.92544 8.59031C2.99044 8.30031 2.87544 7.89531 2.66544 7.68531L1.42544 6.44531C0.695443 5.71531 0.930443 4.97531 1.95044 4.80531L3.54544 4.54031C3.81044 4.49531 4.13044 4.26031 4.25044 4.01531L5.13044 2.25531C5.61044 1.30031 6.39044 1.30031 6.86544 2.25531Z"
+                            fill="#F2BC1B"
+                            stroke="#F2BC1B"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="border-[#C8C9CB] border-r-[1px] pr-4">
+                          4.6/5</span
+                        >
+                      </div>
+                      <span
+                        >135 <span class="text-[#C8C9CB]">Reviews</span></span
+                      >
+                    </div>
+                    <div
+                      class="bg-[#F2F6F4] text-[#05422C] w-fit mx-auto rounded-lg"
+                    >
+                      <span class="py-[10px] px-[15px] inline-block leading-5"
+                        >Sativa 100%</span
+                      >
+                    </div>
+                    <div class="mx-auto w-fit">
+                      <div class="*:font-[600]">
+                        <span class="text-[#EB2606]">$200.00</span
+                        ><span class="text-[#C8C9CB]"> / gram</span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex gap-x-5 *:py-[5px] *:px-[10px] *:border *:rounded-md justify-center"
+                    >
+                      <div>28g</div>
+                      <div>1/2lb</div>
+                      <div>1/4lb</div>
+                    </div>
+                    <div
+                      class="bg-[#17AF26] w-fit px-6 py-2 rounded-full text-white hover:bg-[#2d8735] transition mx-auto"
+                    >
+                      <button class="test-sm">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-5 my-5">
+                <div class="max-w-max md:max-w-[290px] w-full">
+                  <div
+                    class="w-full flex justify-center py-10 bg-[#F4F4F4] rounded-lg mb-3 relative group/item hover:cursor-pointer"
+                  >
+                    <img
+                      src="./public/images/image 13_prev_ui 1.png"
+                      class="w-[50%] object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="bg-[#05422C]/30 backdrop-blur rounded-full absolute invisible group-hover/item:visible w-max z-50 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                    >
+                      <button class="py-5 px-8 text-white">Out Of Stock</button>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div class="mx-auto w-fit">
+                      <span class="text-sm text-[#9D9EA2]">FLOWER</span>
+                    </div>
+                    <h3 class="text-center text-[18px] font-[400]">
+                      2 Oz Deal Watermelon Zkittles + Purple Gushers
+                    </h3>
+                    <div class="flex gap-x-4 justify-center">
+                      <div class="flex items-center gap-x-2">
+                        <svg
+                          class="inline-block w-5 h-5"
+                          height="13"
+                          viewBox="0 0 12 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.86544 2.25531L7.74544 4.01531C7.86544 4.26031 8.18544 4.49531 8.45544 4.54031L10.0504 4.80531C11.0704 4.97531 11.3104 5.71531 10.5754 6.44531L9.33544 7.68531C9.12544 7.89531 9.01044 8.30031 9.07544 8.59031L9.43044 10.1253C9.71044 11.3403 9.06544 11.8103 7.99044 11.1753L6.49544 10.2903C6.22544 10.1303 5.78044 10.1303 5.50544 10.2903L4.01044 11.1753C2.94044 11.8103 2.29044 11.3353 2.57044 10.1253L2.92544 8.59031C2.99044 8.30031 2.87544 7.89531 2.66544 7.68531L1.42544 6.44531C0.695443 5.71531 0.930443 4.97531 1.95044 4.80531L3.54544 4.54031C3.81044 4.49531 4.13044 4.26031 4.25044 4.01531L5.13044 2.25531C5.61044 1.30031 6.39044 1.30031 6.86544 2.25531Z"
+                            fill="#F2BC1B"
+                            stroke="#F2BC1B"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="border-[#C8C9CB] border-r-[1px] pr-4">
+                          4.6/5</span
+                        >
+                      </div>
+                      <span
+                        >135 <span class="text-[#C8C9CB]">Reviews</span></span
+                      >
+                    </div>
+                    <div
+                      class="bg-[#F2F6F4] text-[#05422C] w-fit mx-auto rounded-lg"
+                    >
+                      <span class="py-[10px] px-[15px] inline-block leading-5"
+                        >Sativa 100%</span
+                      >
+                    </div>
+                    <div class="mx-auto w-fit">
+                      <div class="*:font-[600]">
+                        <span class="text-[#EB2606]">$200.00</span
+                        ><span class="text-[#C8C9CB]"> / gram</span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex gap-x-5 *:py-[5px] *:px-[10px] *:border *:rounded-md justify-center"
+                    >
+                      <div>28g</div>
+                      <div>1/2lb</div>
+                      <div>1/4lb</div>
+                    </div>
+                    <div
+                      class="bg-[#17AF26] w-fit px-6 py-2 rounded-full text-white hover:bg-[#2d8735] transition mx-auto"
+                    >
+                      <button class="test-sm">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="max-w-max md:max-w-[290px] w-full">
+                  <div
+                    class="w-full flex justify-center py-10 bg-[#F4F4F4] rounded-lg mb-3 relative group/item hover:cursor-pointer"
+                  >
+                    <img
+                      src="./public/images/image 13_prev_ui 1.png"
+                      class="w-[50%] object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="bg-[#05422C]/30 backdrop-blur rounded-full absolute invisible group-hover/item:visible w-max z-50 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                    >
+                      <button class="py-5 px-8 text-white">Out Of Stock</button>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div class="mx-auto w-fit">
+                      <span class="text-sm text-[#9D9EA2]">FLOWER</span>
+                    </div>
+                    <h3 class="text-center text-[18px] font-[400]">
+                      2 Oz Deal Watermelon Zkittles + Purple Gushers
+                    </h3>
+                    <div class="flex gap-x-4 justify-center">
+                      <div class="flex items-center gap-x-2">
+                        <svg
+                          class="inline-block w-5 h-5"
+                          height="13"
+                          viewBox="0 0 12 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.86544 2.25531L7.74544 4.01531C7.86544 4.26031 8.18544 4.49531 8.45544 4.54031L10.0504 4.80531C11.0704 4.97531 11.3104 5.71531 10.5754 6.44531L9.33544 7.68531C9.12544 7.89531 9.01044 8.30031 9.07544 8.59031L9.43044 10.1253C9.71044 11.3403 9.06544 11.8103 7.99044 11.1753L6.49544 10.2903C6.22544 10.1303 5.78044 10.1303 5.50544 10.2903L4.01044 11.1753C2.94044 11.8103 2.29044 11.3353 2.57044 10.1253L2.92544 8.59031C2.99044 8.30031 2.87544 7.89531 2.66544 7.68531L1.42544 6.44531C0.695443 5.71531 0.930443 4.97531 1.95044 4.80531L3.54544 4.54031C3.81044 4.49531 4.13044 4.26031 4.25044 4.01531L5.13044 2.25531C5.61044 1.30031 6.39044 1.30031 6.86544 2.25531Z"
+                            fill="#F2BC1B"
+                            stroke="#F2BC1B"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="border-[#C8C9CB] border-r-[1px] pr-4">
+                          4.6/5</span
+                        >
+                      </div>
+                      <span
+                        >135 <span class="text-[#C8C9CB]">Reviews</span></span
+                      >
+                    </div>
+                    <div
+                      class="bg-[#F2F6F4] text-[#05422C] w-fit mx-auto rounded-lg"
+                    >
+                      <span class="py-[10px] px-[15px] inline-block leading-5"
+                        >Sativa 100%</span
+                      >
+                    </div>
+                    <div class="mx-auto w-fit">
+                      <div class="*:font-[600]">
+                        <span class="text-[#EB2606]">$200.00</span
+                        ><span class="text-[#C8C9CB]"> / gram</span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex gap-x-5 *:py-[5px] *:px-[10px] *:border *:rounded-md justify-center"
+                    >
+                      <div>28g</div>
+                      <div>1/2lb</div>
+                      <div>1/4lb</div>
+                    </div>
+                    <div
+                      class="bg-[#17AF26] w-fit px-6 py-2 rounded-full text-white hover:bg-[#2d8735] transition mx-auto"
+                    >
+                      <button class="test-sm">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="max-w-max md:max-w-[290px] w-full">
+                  <div
+                    class="w-full flex justify-center py-10 bg-[#F4F4F4] rounded-lg mb-3 relative group/item hover:cursor-pointer"
+                  >
+                    <img
+                      src="./public/images/image 13_prev_ui 1.png"
+                      class="w-[50%] object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="bg-[#05422C]/30 backdrop-blur rounded-full absolute invisible group-hover/item:visible w-max z-50 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+                    >
+                      <button class="py-5 px-8 text-white">Out Of Stock</button>
+                    </div>
+                  </div>
+                  <div class="space-y-4">
+                    <div class="mx-auto w-fit">
+                      <span class="text-sm text-[#9D9EA2]">FLOWER</span>
+                    </div>
+                    <h3 class="text-center text-[18px] font-[400]">
+                      2 Oz Deal Watermelon Zkittles + Purple Gushers
+                    </h3>
+                    <div class="flex gap-x-4 justify-center">
+                      <div class="flex items-center gap-x-2">
+                        <svg
+                          class="inline-block w-5 h-5"
+                          height="13"
+                          viewBox="0 0 12 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.86544 2.25531L7.74544 4.01531C7.86544 4.26031 8.18544 4.49531 8.45544 4.54031L10.0504 4.80531C11.0704 4.97531 11.3104 5.71531 10.5754 6.44531L9.33544 7.68531C9.12544 7.89531 9.01044 8.30031 9.07544 8.59031L9.43044 10.1253C9.71044 11.3403 9.06544 11.8103 7.99044 11.1753L6.49544 10.2903C6.22544 10.1303 5.78044 10.1303 5.50544 10.2903L4.01044 11.1753C2.94044 11.8103 2.29044 11.3353 2.57044 10.1253L2.92544 8.59031C2.99044 8.30031 2.87544 7.89531 2.66544 7.68531L1.42544 6.44531C0.695443 5.71531 0.930443 4.97531 1.95044 4.80531L3.54544 4.54031C3.81044 4.49531 4.13044 4.26031 4.25044 4.01531L5.13044 2.25531C5.61044 1.30031 6.39044 1.30031 6.86544 2.25531Z"
+                            fill="#F2BC1B"
+                            stroke="#F2BC1B"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="border-[#C8C9CB] border-r-[1px] pr-4">
+                          4.6/5</span
+                        >
+                      </div>
+                      <span
+                        >135 <span class="text-[#C8C9CB]">Reviews</span></span
+                      >
+                    </div>
+                    <div
+                      class="bg-[#F2F6F4] text-[#05422C] w-fit mx-auto rounded-lg"
+                    >
+                      <span class="py-[10px] px-[15px] inline-block leading-5"
+                        >Sativa 100%</span
+                      >
+                    </div>
+                    <div class="mx-auto w-fit">
+                      <div class="*:font-[600]">
+                        <span class="text-[#EB2606]">$200.00</span
+                        ><span class="text-[#C8C9CB]"> / gram</span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex gap-x-5 *:py-[5px] *:px-[10px] *:border *:rounded-md justify-center"
+                    >
+                      <div>28g</div>
+                      <div>1/2lb</div>
+                      <div>1/4lb</div>
+                    </div>
+                    <div
+                      class="bg-[#17AF26] w-fit px-6 py-2 rounded-full text-white hover:bg-[#2d8735] transition mx-auto"
+                    >
+                      <button class="test-sm">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-footer w-full px-5 mt-auto">
+        <div
+          class="container mx-auto py-[100px] pt-[320px] md:pt-[250px] relative"
+        >
+          <div class="flex gap-10 flex-col lg:flex-row">
+            <div class="max-w-[379px] w-full space-y-5">
+              <img src="./public/images/Logo-footer.svg" alt="" />
+              <p class="text-[#9D9EA2]">
+                #1 Canadian top rated online dispensary that meets the customers
+                needs in every single medical marijuana aspect. The team here at
+                TopShelfBC is heavily involved in the Canadian cannabis industry
+                for over 15 years. We strive to provide the top quality
+                products, service and care at the lowest prices you’ll ever
+                find.
+              </p>
+            </div>
+            <div class="flex flex-col gap-y-7 w-full">
+              <div class="space-y-3">
+                <h2 class="text-white text-xl font-[500]">QUICK LINK</h2>
+                <ul class="columns-2 *:text-[#9D9EA2] *:text-sm space-y-3">
+                  <li><a href="">Track Your Order</a></li>
+                  <li><a href="">Shop All</a></li>
+                  <li><a href="">Flower</a></li>
+                  <li><a href="">Edibles</a></li>
+                  <li><a href="">Concentrates</a></li>
+                  <li><a href="">Refunds</a></li>
+                  <li><a href="">Mushrooms</a></li>
+                  <li><a href="">Promotions / Bundles</a></li>
+                  <li><a href="">Support</a></li>
+                  <li><a href="">Reward</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Shipping Faq</a></li>
+                </ul>
+              </div>
+              <div class="space-y-3">
+                <h2 class="text-white text-xl font-[500]">CONTACT US</h2>
+                <div>
+                  <span class="text-[#9D9EA2]">info@topshelfbc.cc</span>
+                </div>
+              </div>
+              <div>
+                <h2 class="text-white text-xl font-[500]">MORE</h2>
+                <ul class="columns-2 *:text-[#9D9EA2] *:text-sm space-y-3">
+                  <li><a href="">Buy weed online in Canada</a></li>
+                  <li><a href="">Buy weed online in New Brunswick</a></li>
+                  <li>
+                    <a href="">Buy weed online in Prince Edward Island</a>
+                  </li>
+                  <li>
+                    <a href="">Buy weed online in Northwest Territories</a>
+                  </li>
+                  <li><a href="">Buy weed online in Saskatchewan</a></li>
+                  <li><a href="">Buy weed online in Manitoba</a></li>
+                  <li><a href="">Buy weed online in Quitebec</a></li>
+                  <li><a href="">Buy weed online in British Columbia</a></li>
+                  <li><a href="">Buy weed online in Ontario</a></li>
+                  <li><a href="">Buy weed online in Alberta</a></li>
+                </ul>
+              </div>
+              <div>
+                <img src="./public/images/Row.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute bg-[#05422C] -top-[15%] lg:-top-[20%] w-full p-10 rounded-xl"
+          >
+            <div class="max-w-[789px] w-full">
+              <h2
+                class="text-[30px] md:text-5xl lg:text-6xl font-[600] text-white w-full"
+              >
+                UNLOCK 20% OFF YOUR FIRST ORDER
+              </h2>
+              <div class="my-7">
+                <span class="text-[#C3D2CC]"
+                  >Reveal coupon code by entering your email</span
+                >
+              </div>
+            </div>
+            <form action="" class="mt-5 pt-7 w-full border-t border-[#346654]">
+              <div class="flex flex-col md:flex-row gap-x-10 gap-y-3">
+                <input
+                  type="text"
+                  class="outline-none py-5 rounded-full pl-4 border-[#346654] bg-transparent min-w-[65%] lg:min-w-[70%] border text-white"
+                  placeholder="Search"
+                />
+                <button
+                  class="bg-[#17AF26] px-11 min-w-[25%] rounded-full py-4 font-[500] text-white"
+                >
+                  Reveal coupon
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
